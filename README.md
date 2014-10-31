@@ -3,7 +3,7 @@ todo-learning-playground
 
 A playground repository to use as a playground for learning git, GitHub, HTML/CSS, Javascript, PHP, and... well you get it.
 
-Here are osme horribel typos. Fix thenm!
+Here are some horrible typos. Fix them!
 
 While you're at it, add these new/blank files to the project root (same level as this `README.md`)
 
