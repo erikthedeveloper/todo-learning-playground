@@ -1,3 +1,3 @@
 (function (w, d) {
-	// Add JavaScript code here
+    // Add JavaScript code here
 })(window, document);
