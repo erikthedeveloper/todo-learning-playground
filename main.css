@@ -1,8 +1,41 @@
-body{
-	background-color: pink;
-
+/* Start your CSS here */
+input[type="checkbox"] {
+	margin: 15px 15px 0 0;
+	-webkit-transform: scale(2);
+	   -moz-transform: scale(2);
+	    -ms-transform: scale(2);
+	     -o-transform: scale(2);
+	        transform: scale(2);
 }
-p{
-	color: green;
-	font:"Times New Roman";
+
+input[type="checkbox"], label {
+	cursor: pointer;
+}
+
+label {
+	vertical-align: middle;
+	font-size: 125%;
+}
+
+.widget {
+	width: 30%;
+	margin: auto;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+}
+
+.widget > .title {
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+	background-color: #CCC;
+}
+
+.widget > .date {
+	padding: 5px;
+	border-bottom: 1px solid #000;
+}
+
+.widget > .body {
+	padding: 10px;
 }
