@@ -39,3 +39,18 @@ label {
 .widget > .body {
     padding: 10px;
 }
+
+.task-item {}
+
+.task-item :checked + label {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
