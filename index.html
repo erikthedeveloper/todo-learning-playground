@@ -13,6 +13,12 @@
             <form action="">
                 <div class="tasks-container"></div>
             </form>
+            <hr/>
+            <form name="new_task_form" action="tasks" method="POST">
+                <label for="new_task_title">New Task (Title): </label>
+                <input type="text" name="new_task[title]" id="new_task_title"/>
+                <button>Add Task</button>
+            </form>
         </div>
     </div>
 
