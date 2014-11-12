@@ -9,7 +9,7 @@ var tasks = [];
  * @returns {{}|*}
  */
 function makeTaskObj(id, title, complete) {
-    task = {};
+    var task = {};
     task.id = id;
     task.title = title;
     task.complete = complete;
@@ -37,7 +37,7 @@ function createTask(title) {
  * @param id
  */
 function destroyTask(id) {
-    var task_el = document.getElementById(dom_task_id = 'task_' + id);
+    var task_el = document.getElementById('task_' + id);
     if (task_el) {
         tasks = tasks.filter(function (task_obj) {
             return task_obj.id != id;
