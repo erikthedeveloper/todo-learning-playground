@@ -1,3 +1,5 @@
+// Commenting out for demonstration purposes (to interact w/ console/etc...)
+// (function () {
 var tasks = [];
 
 /**
@@ -34,9 +36,13 @@ tasks.push(
  * @returns {{}|*}
  */
 function createTask(title) {
-    var new_task = makeTaskObj(tasks.length + 1, title, false);
-    tasks.push(new_task);
-    return new_task;
+    var new_task_obj = makeTaskObj(tasks.length + 1, title, false);
+    tasks.push(new_task_obj);
+
+    var new_task_el = createDomTaskFromObj(new_task_obj);
+    appendTaskElement(new_task_el);
+
+    return new_task_obj;
 }
 
 /**
@@ -129,12 +135,11 @@ new_task_form.addEventListener('submit', function (event) {
     event.preventDefault();
 
     var title = this.elements['new_task[title]'].value;
-    var new_task_obj = createTask(title);
-    var new_task_el = createDomTaskFromObj(new_task_obj);
-
-    appendTaskElement(new_task_el);
+    createTask(title);
 
     this.reset();
     this.elements['new_task[title]'].focus();
 });
+
+// });
 
